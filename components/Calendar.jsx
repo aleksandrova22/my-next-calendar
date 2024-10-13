@@ -12,12 +12,14 @@ export default function Calendar({ props }) {
 
   return <>
     <div className={styles.date}>{dateInput.sayDate()}</div>
-    <table className={styles.calendarbody}>
+    <table className={styles.calendarbody} key={dateInput}>
       <thead className={styles.calendarhead}>
-        <tr>{thDays.map(thEl => <th key={thEl + Math.random()}>{thEl}</th>)}</tr>
+        <tr>
+          {thDays.map(thEl => <th key={thEl}>{thEl}</th>)}
+        </tr>
       </thead>
       <tbody>
-        {trMonth.map(trEl => <tr key={trEl + Math.random()}>   {trEl.map(tdEl => <td key={tdEl + Math.random()}
+        {trMonth.map(trEl =>   <tr key={trEl + dateInput}> {trEl.map(tdEl => <td key={tdEl + Math.random()}
           data-color={selectElem(tdEl, inputDay)}>{tdEl}</td>)} </tr>)}
       </tbody>
     </table>
