@@ -1,0 +1,22 @@
+  .calendarhead {
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: #ed89f6;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+  }
+  
+  .calendarbody {
+    gap: 0.5rem;
+    padding: 1em;
+    border: 0.5em solid blueviolet;
+  }
+  
+  .date {
+    border-radius: 0.5em;
+    border: 1px solid blueviolet;
+    padding: 1em;
+    font-size: 1em;
+  }
+

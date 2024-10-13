@@ -1,0 +1,16 @@
+nav.main {
+  background-color: aqua;
+
+  & ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: x-large;
+    padding: 10px;
+  }
+
+  & :link {
+    color: magenta;
+  }
+}

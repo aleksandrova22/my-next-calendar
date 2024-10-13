@@ -1,0 +1,7 @@
+div.calendar {
+    min-width: 20px;
+    text-align: center;
+    background-color: #e7d5e9;
+    border-radius: 0.5em;
+    border: 1px solid blueviolet;
+  }
