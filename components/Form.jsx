@@ -9,7 +9,7 @@ export const Form = memo(function () {
   ref.current = value;
   console.debug('Form render', value);
   return <fieldset>
-    <legend>Form</legend>
+    <legend>Выбери дату</legend>
 
     <input value={value} type="date" id="start" name="trip" min="2010-01-01" max="2030-12-31" onInput={event => setValue(event.target.value)} />
     <hr />
